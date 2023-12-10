@@ -35,7 +35,7 @@ Players earn scores based on their performance in the game. A leaderboard displa
 The game code is organized into several modules:
 
 - **Constants** : Contains shared constants used throughout the game.
-- **Objects** : Includes classes for Player, Enemy, Item, and Bullet.
+- **Objects** : Includes classes for Player, Enemy, Item, Game and more.
 
 # Technologies
 - **Node.js** 
