@@ -14,14 +14,7 @@ class Game {
     this.lastUpdateTime = Date.now();
     this.shouldSendUpdate = false;
     setInterval(this.update.bind(this), 1000 / 60);
-    if (!this.items.length){
-      const x = Constants.MAP_SIZE * (0.25 + Math.random() * 0.5);
-      const y = Constants.MAP_SIZE * (0.25 + Math.random() * 0.5);
-      const x2 = Constants.MAP_SIZE * (0.25 + Math.random() * 0.5);
-      const y2 = Constants.MAP_SIZE * (0.25 + Math.random() * 0.5);
-      this.items.push(new Item({x,y,name:"minimum_sword",damage:20,type:"melee",cooldown:0.5,weaponWidth:50,weaponLength:20}))
-      this.items.push(new Item({x: x2,y: y2,name:"fire_staff",damage:20,type:"ranged",cooldown:0.5}))
-    }
+      
   }
 
   addPlayer(socket, username) {
@@ -34,6 +27,13 @@ class Game {
     const enemyY = Constants.MAP_SIZE * (0.25 + Math.random() * 0.5);
     this.players[socket.id] = new Player(socket.id, username, x, y);
     this.enemys.push(new Enemy(enemyX,enemyY,"monster_1"))
+
+    const x1 = Constants.MAP_SIZE * (0.25 + Math.random() * 0.5);
+    const y1 = Constants.MAP_SIZE * (0.25 + Math.random() * 0.5);
+    const x2 = Constants.MAP_SIZE * (0.25 + Math.random() * 0.5);
+    const y2 = Constants.MAP_SIZE * (0.25 + Math.random() * 0.5);
+    this.items.push(new Item({x:x1,y:y1,name:"minimum_sword",damage:20,type:"melee",cooldown:0.5,weaponWidth:50,weaponLength:20}))
+    this.items.push(new Item({x: x2,y: y2,name:"fire_staff",damage:20,type:"ranged",cooldown:0.5}))
   }
 
   removePlayer(socket) {

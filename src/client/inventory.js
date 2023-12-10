@@ -5,6 +5,12 @@ const slots = document.getElementsByClassName('slot');
 
 
 export function updateInventory(data, selected) {
+    if (!data.length){
+        for (let i = 0; i < slots.length; i++) {
+            slots[i].innerHTML = ``;
+        }
+    }
+    
     for (let i = 0; i < data.length; i++) {
         if (i == selected){
             slots[i].style.border = "6px inset  black"

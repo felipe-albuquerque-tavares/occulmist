@@ -9,7 +9,7 @@
   "scripts": {
     "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && webpack --config webpack.prod.js",
     "lint": "eslint --cache --ext .js,.jsx src/",
-    "develop": "cross-env NODE_ENV=development node src/server/server.js",
+    "develop": "export SET NODE_OPTIONS=--openssl-legacy-provider && cross-env NODE_ENV=development node src/server/server.js",
     "start": "export SET NODE_OPTIONS=--openssl-legacy-provider && cross-env NODE_ENV=production node src/server/server.js",
     "test": "jest"
   },
