@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/server/server.js",
-  "engines": {
-    "node": "18.x"
-  },
   "scripts": {
     "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && webpack --config webpack.prod.js",
     "lint": "eslint --cache --ext .js,.jsx src/",
