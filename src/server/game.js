@@ -176,7 +176,6 @@ class Game {
     const despawnedItems = applyCollisionsItems(Object.values(this.players), this.items);
     despawnedItems.forEach(item => {
       this.players[item.parentID].getItem(item)
-      console.log(item)
     });
     this.items = this.items.filter(item => !despawnedItems.includes(item));
 

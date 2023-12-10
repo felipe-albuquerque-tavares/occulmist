@@ -33,7 +33,6 @@ const keys = {
 }
 
 function onKeyInput(e) {
-  console.log(e)
   const keyPressed = e.type == "keydown";
   const key = keys[e.code];
 
@@ -77,7 +76,6 @@ setInterval(() => {
 
 
 function onMouseInput(e) {
-  console.log("FRONT",e);
   updateClick(e.type);
 }
 

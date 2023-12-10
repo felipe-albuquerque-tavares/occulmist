@@ -239,7 +239,6 @@ function renderSelected(me, player) {
   context.translate(canvasX, canvasY);
   context.scale(player.flip, 1);
   if (!player.fireCooldown && player.inventory[player.item_selected].type == "melee"){
-    console.log("HIT",swing)
     if (swing < 130){
       context.rotate(((0+swing) * -Math.PI) / 180);
       swing += 8

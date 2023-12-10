@@ -24,7 +24,6 @@ class Item extends ObjectClass {
   getWeaponHitbox(player) {
     const weaponLength = this.weaponLength; 
     const weaponWidth = this.weaponWidth; 
-    console.log(player.direction)
     const weaponOffset = weaponLength * Math.sin(player.direction);
     const hitboxX = player.x + weaponOffset;
     const hitboxY = player.y - weaponLength * Math.cos(player.direction);
