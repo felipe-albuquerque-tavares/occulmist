@@ -2,6 +2,9 @@
   "name": "occultimist",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "18.x"
+  },
   "main": "src/server/server.js",
   "scripts": {
     "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && webpack --config webpack.prod.js",
