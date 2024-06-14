@@ -58,7 +58,7 @@ And the folder have the index.html where all the game is rended and two CSS file
 # Technologies
 - **Node.js**
 - **Express**
-- **Scoket.io**
+- **Socket.io**
 - **HTML, JS, CSS**
 
 #### Run
