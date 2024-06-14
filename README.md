@@ -39,7 +39,7 @@ The game code is organized into several modules:
 
 I organized the code with two folders. Client and Server.
 #### Client
-- **Render**: Render all the sprites and bacground.
+- **Render**: Render all the sprites and background.
 - **Networking**: Manage all the sockets connections.
 - **State**: Interpolate some sprites for a more smooth gameplay and organize the updates from the backend.
 - **Leaderboard**: Render and update the leaderboard.
@@ -50,8 +50,8 @@ And the folder have the index.html where all the game is rended and two CSS file
 
 
 #### Server
-- **Objects**: The server side have objects to control and create new players, enemys, items and bullets.
-- **Collisions**: This file make all the checks for collisions, between player, enemys, items and bullets.
+- **Objects**: The server side have objects to control and create new players, enemies, items and bullets.
+- **Collisions**: This file make all the checks for collisions, between player, enemies, items and bullets.
 - **Game**: Here is all the game logic to create all the objects, control animations, delete players and ect.
 - **Server**: This file create the game it self, organize the sockets and initialize the server.
 
